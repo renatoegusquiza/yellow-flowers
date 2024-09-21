@@ -1,5 +1,5 @@
 // Sincronizar las letras con la canción
-var audio = document.querySelector("audio");
+//var audio = document.querySelector("audio");
 var lyrics = document.querySelector("#lyrics");
 
 // Array de objetos que contiene cada línea y su tiempo de aparición en segundos
@@ -35,7 +35,7 @@ var lyricsData = [
 
 // Animar las letras
 function updateLyrics() {
-  var time = Math.floor(audio.currentTime);
+  //var time = Math.floor(audio.currentTime);
   var currentLine = lyricsData.find(
     (line) => time >= line.time && time < line.time + 6
   );
